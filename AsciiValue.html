@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ASCII Value Finder</title>
+</head>
+<body>
+    <h1>Find ASCII Value</h1>
+    <input type="text" id="charInput" maxlength="1">
+    <button onclick="showAsciiValue()">Get ASCII Value</button>
+    <p id="result"></p>
+
+    <script>
+        function showAsciiValue() {
+            const char = document.getElementById('charInput').value;
+            const asciiValue = char.charCodeAt(0);
+            document.getElementById('result').innerText = `ASCII value of '${char}' is ${asciiValue}`;
+        }
+    </script>
+</body>
+</html>
